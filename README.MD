@@ -1,11 +1,15 @@
-#RPC implementado em NODE
+# RPC usando Node e GRPC
 
-para rodar
 
-npm install
+### Installation
 
-depois rode o servidor:
-node /server/index.js
+Use [Node.js](https://nodejs.org/) v6+ para rodar.
 
-depois o cliente:
-node /client/node/index.js
+Instalando
+
+```sh
+$ cd node-rpc
+$ npm install 
+$ node /server/index.js //Roda o Server
+$ node /client/nodex/index.js // Roda o Client
+```
