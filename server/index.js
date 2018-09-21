@@ -12,6 +12,14 @@ server.addService(proto.calculadora.CalculadoraService.service, {
         let resultado = call.request.val - call.request.val2;
         callback(null, {message: resultado});
     }, 
+    Multiplicacao(call, callback) {
+        let resultado = call.request.val * call.request.val2;
+        callback(null, {message: resultado});
+    }, 
+    Divisao(call, callback) {
+        let resultado = call.request.val / call.request.val2;
+        callback(null, {message: resultado});
+    }, 
 });
 
 

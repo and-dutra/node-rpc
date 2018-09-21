@@ -21,3 +21,21 @@ client.Subtrai({val: 344, val2: 30}, (error, response) => {
       console.log("Error:", error.message);
    }
 });
+
+client.Multiplicacao({val: 344, val2: 30}, (error, response) => {
+   if (!error) {
+      console.log("Resultado Multiplicacao : ", response.message);
+   }
+   else {
+      console.log("Error:", error.message);
+   }
+});
+
+client.Divisao({val: 344, val2: 30}, (error, response) => {
+   if (!error) {
+      console.log("Resultado Divisao : ", response.message);
+   }
+   else {
+      console.log("Error:", error.message);
+   }
+});

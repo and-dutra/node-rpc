@@ -3,26 +3,18 @@ syntax = "proto3"; //Specify proto3 version.
 package calculadora; //Optional: unique package name.
 
 service CalculadoraService {
-  rpc Soma (SomaRequest) returns (SomaReply);
-  rpc Subtrai (SubtraiRequest) returns (SubtraiReply);
+  rpc Soma (CalcRequest) returns (CalcReply);
+  rpc Divisao (CalcRequest) returns (CalcReply);
+  rpc Multiplicacao (CalcRequest) returns (CalcReply);
+  rpc Subtrai (CalcRequest) returns (CalcReply);
 }
 
 //Funcao de Soma
-message SomaRequest {
+message CalcRequest {
   float val = 1;
   float val2 = 2;
 }
 
-message SomaReply {
-    float message = 1;
-}
-
-//Funcao de Subtracao
-message SubtraiRequest {
-  float val = 1;
-  float val2 = 2;
-}
-
-message SubtraiReply {
+message CalcReply {
     float message = 1;
 }
