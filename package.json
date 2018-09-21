@@ -12,6 +12,7 @@
   "author": "Andre D Oliveira <adoliveira@pm.me> (https://andre.blog.br/)",
   "license": "MIT",
   "dependencies": {
-    "grpc": "^1.15.1"
+    "grpc": "^1.15.1",
+    "xmlrpc": "^1.3.2"
   }
 }
